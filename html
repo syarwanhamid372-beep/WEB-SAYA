@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ============================================================
+       GANTI JUDUL & DESKRIPSI DI BAWAH INI
+       ============================================================ -->
+  <title>[Syrawan Hamid] — Portfolio Pribadi</title>
+  <meta name="description" content="Website portfolio pribadi [Syrawan Hamid]" />
+
+  <!-- ===== GOOGLE FONTS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ===== FONT AWESOME (ICON) ===== -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- ===== CSS ===== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ============================================================
+       1. LOADING ANIMATION
+       ============================================================ -->
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+    <p class="loader-text">Memuat halaman...</p>
+  </div>
+
+  <!-- ============================================================
+       2. NAVBAR
+       ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <!-- GANTI LOGO / INISIAL DI BAWAH -->
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">SH</span>
+        <span class="logo-text">[Syrawan Hamid]</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Saya</a></li>
+          <li><a href="#cv" class="nav-link">CV</a></li>
+          <li><a href="#karya" class="nav-link">Hasil Karya</a></li>
+          <li><a href="#galeri" class="nav-link">Galeri</a></li>
+          <li><a href="#sosial" class="nav-link">Media Sosial</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+          <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Tombol Dark / Light Mode -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <!-- Tombol Hamburger (tampil di HP) -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       3. BERANDA / HERO
+       ============================================================ -->
+  <section class="hero section" id="home">
+    <div class="container hero-inner">
+      <!-- KOLOM KIRI: TEKS -->
+      <div class="hero-text">
+        <p class="hero-greeting reveal">👋 Halo, selamat datang di website pribadi saya</p>
+
+        <!-- GANTI NAMA LENGKAP -->
+        <h1 class="hero-name reveal">[Syrawan Hamid]</h1>
+
+        <h2 class="hero-typing reveal">
+          Saya seorang <span id="typing" class="typing-text"></span><span class="cursor">|</span>
+        </h2>
+
+        <!-- GANTI DESKRIPSI SINGKAT -->
+        <p class="hero-desc reveal">
+          [Seorang siswa SMKN 42 Jakarta yang sedang menimba ilmu untuk masa depan,
+          dengan ketertarikan pada dunia teknologi, desain, dan media digital.]
+        </p>
+
+        <div class="hero-buttons reveal">
+          <!-- GANTI href DENGAN LINK CV ANDA (Google Drive / file lokal) -->
+          <a
+            href="https://drive.google.com/file/d/1kwy94v3O7W4rzgNj51_8PYsi1pDaRXeD/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            <i class="fa-solid fa-file-lines"></i> Lihat CV
+          </a>
+          <a href="#karya" class="btn btn-outline">
+            <i class="fa-solid fa-briefcase"></i> Lihat Hasil Karya
+          </a>
+        </div>
+
+        <div class="hero-socials reveal">
+          <!-- GANTI SEMUA LINK DI BAWAH -->
+          <a href="https://instagram.com/sh888696" target="_blank" rel="noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="[LINK TIKTOK]" target="_blank" rel="noopener" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="[LINK YOUTUBE]" target="_blank" rel="noopener" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="[LINK GITHUB]" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://wa.me/6285218788877" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- KOLOM KANAN: FOTO PROFIL -->
+      <div class="hero-image reveal">
+        <div class="image-frame">
+          <!-- GANTI src DENGAN FOTO PROFIL ANDA -->
+          <img
+            src="https://placehold.co/600x600/4f46e5/ffffff?text=FOTO+PROFIL"
+            alt="Foto Profil [Syrawan Hamid]"
+          />
+        </div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+    </div>
+
+    <!-- Tombol scroll ke bawah -->
+    <a href="#tentang" class="scroll-down" aria-label="Scroll ke bawah">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       4. TENTANG SAYA
+       ============================================================ -->
+  <section class="section section-alt" id="tentang">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Kenali Saya Lebih Dekat</h2>
+        <p class="section-sub">Sedikit cerita tentang perjalanan, minat, dan tujuan saya.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- KIRI: FOTO -->
+        <div class="about-photo reveal">
+          <!-- GANTI FOTO -->
+          <img
+            src="https://placehold.co/600x750/6366f1/ffffff?text=FOTO+PROFIL"
+            alt="Foto [Syrawan Hamid]"
+          />
+          <div class="about-badge">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>SMKN 42 Jakarta</span>
+          </div>
+        </div>
+
+        <!-- KANAN: BIODATA & CERITA -->
+        <div class="about-content">
+          <h3 class="about-heading reveal">Biodata Singkat</h3>
+          <ul class="biodata reveal">
+            <!-- GANTI SETIAP DATA DI BAWAH -->
+            <li><span>Nama Lengkap</span><strong>[Syrawan Hamid]</strong></li>
+            <li><span>Tempat, Tanggal Lahir</span><strong>[Jakarta, 00 Bulan 0000]</strong></li>
+            <li><span>Asal Sekolah</span><strong>[SMKN 42 Jakarta]</strong></li>
+            <li><span>Jurusan</span><strong>[Jurusan Anda]</strong></li>
+            <li><span>Email</span><strong>[syarwanhamid372@gmail.com]</strong></li>
+            <li><span>WhatsApp</span><strong>[+62 852-1878-8877]</strong></li>
+          </ul>
+
+          <h3 class="about-heading reveal">Cerita Saya</h3>
+          <p class="reveal">
+            [Saya adalah seorang pelajar yang percaya bahwa belajar tidak hanya dilakukan di dalam
+            kelas. Saya senang mencoba hal baru, mulai dari desain, editing video, hingga membuat
+            website sederhana. Setiap proyek yang saya kerjakan menjadi kesempatan untuk berkembang
+            dan memahami hal-hal baru.]
+          </p>
+
+          <!-- MINAT -->
+          <h3 class="about-heading reveal">Minat</h3>
+          <div class="chips reveal">
+            <span class="chip"><i class="fa-solid fa-palette"></i> Desain Grafis</span>
+            <span class="chip"><i class="fa-solid fa-video"></i> Videografi</span>
+            <span class="chip"><i class="fa-solid fa-code"></i> Web Development</span>
+            <span class="chip"><i class="fa-solid fa-camera"></i> Fotografi</span>
+            <span class="chip"><i class="fa-solid fa-music"></i> Musik</span>
+          </div>
+
+          <!-- KEAHLIAN -->
+          <h3 class="about-heading reveal">Keahlian</h3>
+          <div class="skills reveal">
+            <!-- GANTI --w UNTUK MENGUBAH PERSENTASE (0% - 100%) -->
+            <div class="skill" style="--w: 85%">
+              <div class="skill-top"><span>HTML & CSS</span><span>85%</span></div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill" style="--w: 70%">
+              <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill" style="--w: 80%">
+              <div class="skill-top"><span>Desain Grafis</span><span>80%</span></div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+            <div class="skill" style="--w: 75%">
+              <div class="skill-top"><span>Editing Video</span><span>75%</span></div>
+              <div class="bar"><div class="bar-fill"></div></div>
+            </div>
+          </div>
+
+          <!-- PENDIDIKAN & TUJUAN -->
+          <div class="two-col reveal">
+            <div class="mini-card">
+              <i class="fa-solid fa-school"></i>
+              <h4>Pendidikan</h4>
+              <p>[SMKN 42 Jakarta — Jurusan Anda]</p>
+              <p class="muted">[2023 — Sekarang]</p>
+            </div>
+            <div class="mini-card">
+              <i class="fa-solid fa-bullseye"></i>
+              <h4>Tujuan & Cita-cita</h4>
+              <p>[Menjadi profesional di bidang teknologi kreatif dan terus berkarya.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. CV
+       ============================================================ -->
+  <section class="section" id="cv">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Curriculum Vitae</span>
+        <h2 class="section-title">Riwayat Hidup</h2>
+        <p class="section-sub">Ringkasan pendidikan, pengalaman, dan pencapaian saya.</p>
+      </div>
+
+      <!-- KARTU HEADER CV -->
+      <div class="cv-header reveal">
+        <!-- GANTI FOTO CV -->
+        <img
+          src="https://placehold.co/200x200/4f46e5/ffffff?text=FOTO"
+          alt="Foto CV"
+          class="cv-photo"
+        />
+        <div class="cv-identity">
+          <h3>[Syrawan Hamid]</h3>
+          <p class="cv-role">[Pelajar / Web Developer Pemula / Desainer]</p>
+          <div class="cv-contact">
+            <span><i class="fa-solid fa-envelope"></i> [syarwanhamid372@gmail.com]</span>
+            <span><i class="fa-solid fa-phone"></i> [+62 852-1878-8877]</span>
+            <span><i class="fa-solid fa-location-dot"></i> [Jakarta, Indonesia]</span>
+          </div>
+        </div>
+        <!-- TOMBOL DOWNLOAD CV — GANTI href DENGAN FILE PDF ANDA -->
+        <a
+          href="https://drive.google.com/file/d/1kwy94v3O7W4rzgNj51_8PYsi1pDaRXeD/view?usp=drivesdk"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-primary"
+        >
+          <i class="fa-solid fa-download"></i> Download CV
+        </a>
+      </div>
+
+      <div class="cv-grid">
+        <!-- KOLOM KIRI: DATA DIRI & KEAHLIAN -->
+        <div class="cv-side">
+          <div class="cv-card reveal">
+            <h4><i class="fa-solid fa-user"></i> Data Diri</h4>
+            <ul class="cv-list">
+              <li><span>Nama</span><strong>[Syrawan Hamid]</strong></li>
+              <li><span>TTL</span><strong>[Jakarta, 00-00-0000]</strong></li>
+              <li><span>Alamat</span><strong>[Jakarta, Indonesia]</strong></li>
+              <li><span>Email</span><strong>[syarwanhamid372@gmail.com]</strong></li>
+              <li><span>Telepon</span><strong>[+62 852-1878-8877]</strong></li>
+            </ul>
+          </div>
+
+          <div class="cv-card reveal">
+            <h4><i class="fa-solid fa-star"></i> Keahlian</h4>
+            <ul class="cv-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+              <li>Canva</li><li>CapCut</li><li>Photoshop</li>
+              <li>Microsoft Office</li><li>Public Speaking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- KOLOM KANAN: TIMELINE -->
+        <div class="cv-main">
+          <div class="cv-card reveal">
+            <h4><i class="fa-solid fa-graduation-cap"></i> Pendidikan</h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2023 — Sekarang]</span>
+                  <h5>[SMKN 42 Jakarta]</h5>
+                  <p>[Jurusan Anda — Deskripsi singkat tentang jurusan.]</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2020 — 2023]</span>
+                  <h5>[SMP / MTs Anda]</h5>
+                  <p>[Deskripsi singkat.]</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2014 — 2020]</span>
+                  <h5>[SD / MI Anda]</h5>
+                  <p>[Deskripsi singkat.]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-card reveal">
+            <h4><i class="fa-solid fa-briefcase"></i> Pengalaman</h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2025]</span>
+                  <h5>[Nama Proyek / Pekerjaan]</h5>
+                  <p>[Deskripsi pengalaman Anda di sini.]</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2024]</span>
+                  <h5>[Nama Proyek / Pekerjaan]</h5>
+                  <p>[Deskripsi pengalaman Anda di sini.]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-card reveal">
+            <h4><i class="fa-solid fa-award"></i> Sertifikat & Prestasi</h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2025]</span>
+                  <h5>[Nama Sertifikat / Prestasi]</h5>
+                  <p>[Diterbitkan oleh: Nama Lembaga]</p>
+                </div>
+              </div>
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2024]</span>
+                  <h5>[Nama Sertifikat / Prestasi]</h5>
+                  <p>[Diterbitkan oleh: Nama Lembaga]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-card reveal">
+            <h4><i class="fa-solid fa-people-group"></i> Organisasi</h4>
+            <div class="timeline">
+              <div class="tl-item">
+                <div class="tl-dot"></div>
+                <div class="tl-content">
+                  <span class="tl-date">[2024 — Sekarang]</span>
+                  <h5>[Nama Organisasi]</h5>
+                  <p>[Jabatan — Deskripsi tugas singkat.]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. HASIL KARYA / PORTFOLIO
+       ============================================================ -->
+  <section class="section section-alt" id="karya">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Hasil Karya Saya</h2>
+        <p class="section-sub">Kumpulan proyek dan karya yang pernah saya kerjakan.</p>
+      </div>
+
+      <!-- FILTER KATEGORI -->
+      <div class="filter-bar reveal" id="filterBar">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="desain">Desain</button>
+        <button class="filter-btn" data-filter="video">Video</button>
+        <button class="filter-btn" data-filter="website">Website</button>
+        <button class="filter-btn" data-filter="tugas">Tugas</button>
+        <button class="filter-btn" data-filter="lainnya">Lainnya</button>
+      </div>
+
+      <!-- GRID KARYA -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- KARTU 1 -->
+        <article class="portfolio-card reveal" data-category="desain">
+          <div class="pc-thumb">
+            <!-- GANTI GAMBAR -->
+            <img src="https://placehold.co/800x600/6366f1/ffffff?text=Karya+Desain+1" alt="Judul Karya 1" />
+            <span class="pc-cat">Desain</span>
+          </div>
+          <div class="pc-body">
+            <h3>[Judul Karya 1]</h3>
+            <p>[Deskripsi singkat tentang karya ini.]</p>
+            <div class="pc-actions">
+              <button class="btn btn-sm btn-outline open-detail"
+                data-title="[Judul Karya 1]"
+                data-desc="[Deskripsi lengkap karya ini.]"
+                data-img="https://placehold.co/800x600/6366f1/ffffff?text=Karya+Desain+1">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="[LINK KARYA]" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KARTU 2 -->
+        <article class="portfolio-card reveal" data-category="video">
+          <div class="pc-thumb">
+            <img src="https://placehold.co/800x600/8b5cf6/ffffff?text=Karya+Video+1" alt="Judul Karya 2" />
+            <span class="pc-cat">Video</span>
+          </div>
+          <div class="pc-body">
+            <h3>[Judul Karya 2]</h3>
+            <p>[Deskripsi singkat tentang karya ini.]</p>
+            <div class="pc-actions">
+              <button class="btn btn-sm btn-outline open-detail"
+                data-title="[Judul Karya 2]"
+                data-desc="[Deskripsi lengkap karya ini.]"
+                data-img="https://placehold.co/800x600/8b5cf6/ffffff?text=Karya+Video+1">
+                <i class="fa-solid fa-eye"></i> Lihat Detail
+              </button>
+              <a href="[LINK KARYA]" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Link
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- KARTU 3 -->
+        <article class="portfolio-card reveal" data-category="website">
+          <div class="pc-thumb">
+            <img src="https://placehold.co/800x600/06b6d4/ffffff
